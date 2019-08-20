@@ -20,7 +20,7 @@
 
   <?php
   ini_set('display_errors', 1);
-  echo "HELLO CLOUD COMPUTING CLASS 0821!";
+  echo "HELLO CLOUD COMPUTING ATN Shop";
 
   ?>
 
