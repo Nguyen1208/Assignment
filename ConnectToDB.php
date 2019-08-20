@@ -48,7 +48,7 @@
     ));
   }
 
-  $sql = "SELECT * FROM product ORDER BY productid";
+  $sql = "SELECT * FROM productid ORDER BY productid";
   $stmt = $pdo->prepare($sql);
   //Thiết lập kiểu dữ liệu trả về
   $stmt->setFetchMode(PDO::FETCH_ASSOC);
