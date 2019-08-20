@@ -2,19 +2,19 @@
 <html>
 <script>
     function CheckClass() {
-        var CheckClassName = document.getElementById("Class1").value;
-        var checkFullName = document.getElementById("Name1").value;
-        var checkEmail = document.getElementById("Email1").value;
-        if (CheckClassName == "GCD0821") {
+        var CheckSupplierName = document.getElementById("Supplier1").value;
+        var checkProductName = document.getElementById("Name1").value;
+        var checkPrice = document.getElementById("price1").value;
+        if (CheckSupplierName == "ToyCompany") {
             return true;
-        } else if (checkFullName == "") {
-            alert("FullName should have Data");
+        } else if (checkProductName == "") {
+            alert("Name should have Data");
             return false;
         } else if (checkEmail == "") {
-            alert("Email should have Data");
+            alert("price should have Data");
             return false;
         } else {
-            alert("ClassName should equal GCD0821");
+            alert("Supplier Name should equal ToyCompany ");
             return false;
         }
     }
@@ -41,21 +41,21 @@
             <li>Product ID:</li>
             <li><input type="text" name="productid" /></li>
             <li>Full Name:</li>
-            <li><input type="text" name="fname" id="Name1" /></li>
+            <li><input type="text" name="name" id="Name1" /></li>
             <li>Phone:</li>
-            <li><input type="text" name="email" id="Email1" /></li>
+            <li><input type="text" name="price" id="Price1" /></li>
             <li>Class:</li>
-            <li><input type="text" name="classname" id="Class1" /></li>
-            <li><input type="submit" name="Submit" onclick="CheckClass()" /></li>
+            <li><input type="text" name="suppli9ername" id="Supplier1" /></li>
+            <li><input type="submit" name="Submit" onclick="CheckSupplier()" /></li>
         </form>
     </ul>
     <div class="row">
         <div class="col-12">
-            <a href="ConnectToDB.php" class="myButton pl-3">View Data</a>
+            <a href="ConnectToDB.php" class="myButton pl-3">View Data's ATN</a>
 
-            <a href="UpdateData.php" class="myButton pl-3">Update data to the database</a>
+            <a href="UpdateData.php" class="myButton pl-3">Update data to the database's ATN</a>
 
-            <a href="DeleteData.php" class="myButton pl-3">Delete data to the database</a>
+            <a href="DeleteData.php" class="myButton pl-3">Delete data to the database's ATN</a>
         </div>
     </div>
     <?php
@@ -81,7 +81,7 @@
     }
 
     if ($pdo === false) {
-        echo "ERROR: Could not connect Database";
+        echo "ERROR: Could not connect Database's ATN";
     }
 
     

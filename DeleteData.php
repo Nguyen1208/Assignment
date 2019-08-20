@@ -18,7 +18,7 @@
 <body>
 
 
-    <h1>Delete from database</h1>
+    <h1>Delete from database's ATNs</h1>
     <ul>
         <form name="DeleteData" action="DeleteData.php" method="POST">
             <li>PRODUCT ID:</li>
@@ -29,11 +29,11 @@
     </ul>
     <div class="row">
         <div class="col-12">
-            <a href="ConnectToDB.php" class="myButton pl-3">View Data</a>
+            <a href="ConnectToDB.php" class="myButton pl-3">View Data's ATN</a>
 
-            <a href="InsertData.php" class="myButton pl-3">Insert data to the database</a>
+            <a href="InsertData.php" class="myButton pl-3">Insert data to the database's ATN</a>
 
-            <a href="UpdateData.php" class="myButton pl-3">Update data to the database</a>
+            <a href="UpdateData.php" class="myButton pl-3">Update data to the database's ATN</a>
         </div>
     </div>
 

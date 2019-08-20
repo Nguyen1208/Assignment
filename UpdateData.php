@@ -9,19 +9,19 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script>
     function CheckClass() {
-        var CheckClassName = document.getElementById("Class1").value;
-        var checkFullName = document.getElementById("Name1").value;
-        var checkEmail = document.getElementById("Email1").value;
-        if (CheckClassName == "GCD0821") {
+        var CheckSupplierName = document.getElementById("Supplier1").value;
+        var checkProductName = document.getElementById("Name1").value;
+        var checkPrice = document.getElementById("Price1").value;
+        if (CheckSupplierName == "ToyCompany") {
             return true;
-        } else if (checkFullName == "") {
-            alert("FullName should have Data");
+        } else if (checkProductName == "") {
+            alert("ProductName should have Data");
             return false;
-        } else if (checkEmail == "") {
-            alert("Email should have Data");
+        } else if (checkPrice == "") {
+            alert("Price should have Data");
             return false;
         } else {
-            alert("ClassName should equal GCD0821");
+            alert("Supplier Name should equal ToyCompany");
             return false;
         }
     }
@@ -35,22 +35,22 @@
             <li>Product ID:</li>
             <li><input type="text" name="productid" id= /></li>
             <li>Full Name:</li>
-            <li><input type="text" name="fname" id="Name1" /></li>
+            <li><input type="text" name="name" id="Name1" /></li>
             <li>Phone:</li>
-            <li><input type="text" name="email" id="Email1" /></li>
+            <li><input type="text" name="price" id="Price1" /></li>
             <li>Class:</li>
-            <li><input type="text" name="classname" id="Class1" /></li>
-            <li><input type="submit" onclick="CheckClass()" /></li>
+            <li><input type="text" name="Suppliername" id="Supplier1" /></li>
+            <li><input type="submit" onclick="CheckSupplier()" /></li>
         </form>
 
     </ul>
     <div class="row">
         <div class="col-12">
-            <a href="ConnectToDB.php" class="myButton pl-3">View Data</a>
+            <a href="ConnectToDB.php" class="myButton pl-3">View Data's ATN</a>
 
-            <a href="InsertData.php" class="myButton pl-3">Insert Product to the database</a>
+            <a href="InsertData.php" class="myButton pl-3">Insert Product to the database's ATN</a>
 
-            <a href="DeleteData.php" class="myButton pl-3">Delete Product to the database</a>
+            <a href="DeleteData.php" class="myButton pl-3">Delete Product to the database's ATN</a>
         </div>
     </div>
     <?php
