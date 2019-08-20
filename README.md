@@ -1,3 +1,2 @@
-# Huynh Khanh Huy
-## Assignment 2 - Cloud Computing
-## 18 Aug, 2019
+Huynh Mai An Nguyen
+Assignment 2 - Cloud Computing
