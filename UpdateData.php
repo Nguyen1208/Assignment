@@ -46,11 +46,11 @@
         <form name="UpdateData" action="UpdateData.php" method="POST">
             <li>Product ID:</li>
             <li><input type="text" name="productid" id= /></li>
-            <li>Full Name:</li>
+            <li>Name:</li>
             <li><input type="text" name="name" id="Name1" /></li>
-            <li>Phone:</li>
+            <li>Price:</li>
             <li><input type="text" name="price" id="Price1" /></li>
-            <li>Class:</li>
+            <li>Supplier:</li>
             <li><input type="text" name="Suppliername" id="Supplier1" /></li>
             <li><input type="submit" onclick="CheckSupplier()" /></li>
         </form>
