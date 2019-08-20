@@ -97,7 +97,7 @@
     }
 
     
-    $sql = "INSERT INTO productid(productid, name, price, supplier)"
+    $sql = "INSERT INTO product(productid, name, price, supplier)"
         . " VALUES('$_POST[productid]','$_POST[name]','$_POST[price]','$_POST[supplier]')";
     $stmt = $pdo->prepare($sql);
     

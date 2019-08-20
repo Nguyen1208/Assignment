@@ -77,7 +77,7 @@
         ));
     }
 
-    $sql = "DELETE FROM productid WHERE productid = '$_POST[productid]'";
+    $sql = "DELETE FROM product WHERE productid = '$_POST[productid]'";
     $stmt = $pdo->prepare($sql);
     if ($stmt->execute() == TRUE) {
         echo "Record deleted successfully.";

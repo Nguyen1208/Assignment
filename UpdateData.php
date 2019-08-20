@@ -105,7 +105,7 @@
 
     // return the number of row affected
     //return $stmt->rowCount();
-    $sql = "UPDATE productid SET name = '$_POST[name]', price = '$_POST[price]', supplier = '$_POST[supplier]'
+    $sql = "UPDATE product SET name = '$_POST[name]', price = '$_POST[price]', supplier = '$_POST[supplier]'
         WHERE productid = '$_POST[productid]'";
     $stmt = $pdo->prepare($sql);
     if ($stmt->execute() == TRUE) {
